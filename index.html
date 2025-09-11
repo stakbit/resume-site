@@ -26,7 +26,7 @@
     </script>
 
     <style>
-      /* Print tweaks: hide buttons; ensure nice margins */
+      /* Print tweaks */
       @media print {
         .no-print { display: none !important; }
         body { color: #000; }
@@ -89,7 +89,7 @@
           <section aria-labelledby="about" class="mb-10">
             <h2 id="about" class="text-xl font-semibold text-slate-900">About Me</h2>
             <p class="mt-3 leading-relaxed text-slate-700">
-              Full‑stack engineer with 25+ years of experience building scalable, high‑performance web applications. Expert in Laravel, modern JavaScript frameworks, and Linux ecosystems. Passionate about clean, responsive UIs, optimized APIs, and data‑driven solutions that fuel growth for startups, enterprises, and high‑traffic platforms. Known for blending technical leadership with a hands‑on approach to delivering exceptional results.
+              Full‑stack engineer with 25+ years of hands‑on experience architecting scalable, high‑performance web platforms. Deep expertise in Laravel, modern JavaScript frameworks, and Linux‑based ecosystems. Known for crafting clean, responsive UIs, building lightning‑fast APIs, and delivering data‑driven solutions that fuel growth for startups, enterprise teams, and high‑traffic environments. I lead with technical vision, execute with precision, and bring a roll‑up‑your‑sleeves mindset to every challenge.
             </p>
           </section>
 
@@ -99,23 +99,35 @@
             <div class="mt-4 grid gap-4 sm:gap-6 sm:grid-cols-2">
               <div class="rounded-xl border border-slate-200 p-4">
                 <h3 class="font-medium text-slate-900">Backend &amp; APIs</h3>
-                <p class="mt-2 text-sm text-slate-700">PHP, Laravel, Node.js, RESTful APIs, OAuth</p>
+                <p class="mt-2 text-sm text-slate-700">PHP 8, Laravel 12 (Sanctum/Passport), Node.js, REST, GraphQL, WebSockets, OAuth</p>
               </div>
               <div class="rounded-xl border border-slate-200 p-4">
                 <h3 class="font-medium text-slate-900">Frontend</h3>
-                <p class="mt-2 text-sm text-slate-700">Vue.js, Tailwind CSS, Responsive UI, JavaScript (ES6+)</p>
+                <p class="mt-2 text-sm text-slate-700">Vue 3 + Vite, Pinia/Vuex, Vue Router, Tailwind CSS, JavaScript/TypeScript (ES6+), Responsive UI</p>
               </div>
               <div class="rounded-xl border border-slate-200 p-4">
-                <h3 class="font-medium text-slate-900">Databases</h3>
-                <p class="mt-2 text-sm text-slate-700">MySQL, PostgreSQL, MongoDB, SQLite</p>
+                <h3 class="font-medium text-slate-900">Data &amp; Storage</h3>
+                <p class="mt-2 text-sm text-slate-700">MySQL 8, PostgreSQL (PostGIS), Redis (cache/queues/Horizon), MongoDB, SQLite, Amazon S3</p>
               </div>
               <div class="rounded-xl border border-slate-200 p-4">
                 <h3 class="font-medium text-slate-900">DevOps &amp; Cloud</h3>
-                <p class="mt-2 text-sm text-slate-700">AWS, NGINX, Linux VPS, Docker, Git, CI/CD, Agile/Scrum</p>
+                <p class="mt-2 text-sm text-slate-700">AWS (EC2/S3), Laravel Forge, Docker &amp; Docker Compose, NGINX, Linux, Supervisor, CI/CD (Bitbucket Pipelines), Git</p>
+              </div>
+              <div class="rounded-xl border border-slate-200 p-4">
+                <h3 class="font-medium text-slate-900">Observability &amp; QA</h3>
+                <p class="mt-2 text-sm text-slate-700">Logging/monitoring &amp; alerts, PHPUnit/Pest, Postman, load/performance tuning</p>
+              </div>
+              <div class="rounded-xl border border-slate-200 p-4">
+                <h3 class="font-medium text-slate-900">Integrations &amp; Messaging</h3>
+                <p class="mt-2 text-sm text-slate-700">Twilio (SMS), Mailchimp, Zapier, Webhooks, Google Analytics/Optimize, WordPress (custom plugins)</p>
+              </div>
+              <div class="rounded-xl border border-slate-200 p-4">
+                <h3 class="font-medium text-slate-900">AI / LLMs</h3>
+                <p class="mt-2 text-sm text-slate-700">OpenAI, Claude, Grok, DeepSeek (tool use / agent patterns, retrieval)</p>
               </div>
               <div class="rounded-xl border border-slate-200 p-4 sm:col-span-2">
-                <h3 class="font-medium text-slate-900">Other Expertise</h3>
-                <p class="mt-2 text-sm text-slate-700">AI Integrations (OpenAI, Claude, Grok), Shell Scripting, Performance Optimization, API Scaling</p>
+                <h3 class="font-medium text-slate-900">Practices</h3>
+                <p class="mt-2 text-sm text-slate-700">Agile/Scrum, code reviews, runbooks, security (SSL/TLS, IP allowlists, API key management)</p>
               </div>
             </div>
           </section>
@@ -133,11 +145,13 @@
                   <p class="text-sm text-slate-600">04/2016 – 09/2025</p>
                 </div>
                 <ul class="mt-2 list-disc ps-5 text-slate-700 space-y-1 text-sm">
-                  <li>Architected and implemented the core infrastructure for Prudent Pet, building a scalable foundation for high‑traffic growth.</li>
-                  <li>Planned and executed full SDLC across multiple platforms, from requirements to deployment and maintenance.</li>
-                  <li>Recruited, onboarded, and led a specialized developer team aligned to business and technical needs.</li>
-                  <li>Maintained 50+ WordPress sites and ~6 custom applications (Prudent Pet, ClaimPix, MoveMatcher).</li>
-                  <li>Implemented CI/CD, version control, and monitoring best practices ensuring uptime, security, and performance.</li>
+                  <li>Built PrudentPet’s quoting platform end‑to‑end: UML/Postgres data model, secure partner API integrations, and multiple Vue.js UIs configurable via database. Ran A/B tests (Google Optimize) with a custom in‑house analytics system. Delivered customer and agent portals and automated policy workflows via Mailchimp, Twilio (SMS), and Zapier. Orchestrated scheduled jobs across a distributed architecture to keep systems in sync. Built ad‑hoc automated reporting and integrated server‑hosted BI dashboards.</li>
+                  <li>Designed and shipped a real‑time messaging app to replace a deprecated third‑party service—Laravel, Vue.js (Vite), Tailwind, MySQL 8, WebSockets (Pusher). Delivered in under one month; in production 2+ years with company‑wide adoption and evaluated as a potential standalone product.</li>
+                  <li>Led a 3‑engineer, 48‑hour sprint to design, build, and deploy a real‑time claims‑mapping app during the Texas floods; ingested claims, mapped submerged vehicles, routed tow trucks, and synced claim status live—cutting response times and saving the company thousands.</li>
+                  <li>Served as sole developer/architect for ClaimPix and MoveMatcher—DB schema, APIs, UI—and stood up surrounding systems (CI/CD, monitoring, access controls, runbooks). Transitioned ownership post‑launch to focus on PrudentPet, the primary revenue driver.</li>
+                  <li>Led a 4‑month daycare‑platform POC delivering real‑time distance‑based routing and provider search on PostgreSQL/PostGIS; shelved post‑POC after a business‑model review.</li>
+                  <li>Supported 40+ WordPress sites across internal businesses: implemented security and disaster‑recovery controls (IP allowlisting, SSL, automated backups, VPN, API encryption, key management). Built custom WordPress plugins, including a responsive embedded quoting widget that generated PrudentPet quotes directly in the CMS without redirects.</li>
+                  <li>Established DevOps/sysops standards: AWS EC2/S3, Laravel Forge provisioning, Bitbucket/Jira/Confluence workflows, and CI/CD + monitoring to maintain high uptime, performance, and security. Documented operational playbooks in the internal wiki.</li>
                 </ul>
               </li>
 
@@ -149,10 +163,7 @@
                   <p class="text-sm text-slate-600">05/2011 – 11/2015</p>
                 </div>
                 <ul class="mt-2 list-disc ps-5 text-slate-700 space-y-1 text-sm">
-                  <li>Designed and maintained enterprise analytics platforms for telecom network performance optimization.</li>
-                  <li>Built a custom reporting engine with automated Excel outputs and dynamic visualizations.</li>
-                  <li>Optimized PostgreSQL operations with caching & pagination for high‑volume datasets.</li>
-                  <li>Directed a front‑end redesign with responsive layouts and modern routing.</li>
+                  <li>Architected and led end‑to‑end delivery of enterprise‑grade analytics platforms for top telecoms—driving network optimization, automating reporting with dynamic Excel outputs, accelerating PostgreSQL performance for massive datasets, and spearheading a full‑stack UI overhaul.</li>
                 </ul>
               </li>
 
@@ -164,9 +175,7 @@
                   <p class="text-sm text-slate-600">08/2009 – 05/2011</p>
                 </div>
                 <ul class="mt-2 list-disc ps-5 text-slate-700 space-y-1 text-sm">
-                  <li>Implemented platform‑wide upgrades including high‑volume photo workflows and appraisal integrations.</li>
-                  <li>Built admin modules for granular financial reporting and batch operations.</li>
-                  <li>Refactored core systems for performance, maintainability, and scalability.</li>
+                  <li>Drove platform‑wide modernization—engineering scalable photo workflows, integrating appraisal APIs, building robust financial ops modules, and refactoring legacy systems for performance and maintainability.</li>
                 </ul>
               </li>
 
@@ -178,9 +187,7 @@
                   <p class="text-sm text-slate-600">02/2008 – 08/2009</p>
                 </div>
                 <ul class="mt-2 list-disc ps-5 text-slate-700 space-y-1 text-sm">
-                  <li>Built geo‑based lead assignment platform (Google Maps API) for precise regional targeting.</li>
-                  <li>Developed email automation systems delivering 3M+ targeted emails weekly.</li>
-                  <li>Engineered robust data management systems to streamline workflows.</li>
+                  <li>Led development of geo‑targeted lead routing with Google Maps API, scaled email automation to 3M+ weekly sends, and built resilient data systems that streamlined org‑wide workflows.</li>
                 </ul>
               </li>
 
@@ -192,9 +199,7 @@
                   <p class="text-sm text-slate-600">04/2007 – 02/2008</p>
                 </div>
                 <ul class="mt-2 list-disc ps-5 text-slate-700 space-y-1 text-sm">
-                  <li>Delivered a custom CMS supporting multiple high‑traffic financial sites with permissioned controls.</li>
-                  <li>Re‑architected platform modules for scalability and maintainability.</li>
-                  <li>Championed MVC and version control best practices.</li>
+                  <li>Delivered a custom CMS powering high‑traffic financial sites with granular access controls, re‑architected platform modules for scale, and led dev‑process modernization through MVC and version control.</li>
                 </ul>
               </li>
 
@@ -206,8 +211,7 @@
                   <p class="text-sm text-slate-600">12/2006 – 04/2007</p>
                 </div>
                 <ul class="mt-2 list-disc ps-5 text-slate-700 space-y-1 text-sm">
-                  <li>Built a high‑performance reporting application for data aggregation and analysis.</li>
-                  <li>Enhanced client‑facing tools with cleaner UIs and improved conversion flows.</li>
+                  <li>Delivered a high‑performance reporting app that elevated client insights while enhancing front‑end UX and optimizing conversion workflows.</li>
                 </ul>
               </li>
 
@@ -219,11 +223,8 @@
                   <p class="text-sm text-slate-600">03/1998 – 12/2006</p>
                 </div>
                 <ul class="mt-2 list-disc ps-5 text-slate-700 space-y-1 text-sm">
-                  <li>Managed Unix/Windows environments, including OS, server, and software installations and upgrades.</li>
-                  <li>Administered IIS & Apache for 30+ high‑traffic internal dynamic applications (ASP.NET, PERL, PHP).</li>
-                  <li>Developed a robust job tracking web app for the machining division (real‑time order management & reporting).</li>
-                  <li>Automated workflows for account management, newsletters, and content publishing.</li>
-                  <li>Streamlined OS image rollout, reducing manual setup and ensuring consistent deployments.</li>
+                  <li>Managed hybrid Unix/Windows environments and administered high‑traffic IIS/Apache servers hosting dynamic internal apps—streamlining deployments, upgrades, and system operations.</li>
+                  <li>Engineered internal tooling and automation, including a real‑time job tracking web app and scripted workflows for account management, content publishing, and OS image rollouts—cutting manual overhead and boosting operational efficiency.</li>
                 </ul>
               </li>
             </ol>
