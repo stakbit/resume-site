@@ -3,16 +3,16 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Jose Contreras — Full-Stack Web Developer</title>
+    <title>Jose Contreras — Full-Stack Engineer</title>
 
     <meta
       name="description"
-      content="Senior full-stack web developer specializing in Laravel and modern JavaScript frameworks (Vue, React, Next.js). Scalable APIs, real-time features, and clean, responsive UIs."
+      content="Senior full-stack engineer focused on high-throughput web applications and APIs. Scalable, event-driven systems (queues, caching, webhooks) with production-grade ops across Docker, AWS, CI/CD, and monitoring."
     />
-    <meta property="og:title" content="Jose Contreras — Full-Stack Web Developer" />
+    <meta property="og:title" content="Jose Contreras — Full-Stack Engineer" />
     <meta
       property="og:description"
-      content="Laravel, Vue, React/Next.js, AWS, Docker. Scalable APIs, real-time systems, clean UIs."
+      content="High-throughput systems, APIs & automation. PHP/Laravel, Vue/React/Next.js, Postgres/Redis, AWS/Docker, event-driven workflows."
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://stakbit.github.io/resume-site/" />
@@ -62,27 +62,29 @@
         "@context": "https://schema.org",
         "@type": "Person",
         "name": "Jose Contreras",
-        "jobTitle": "Full-Stack Web Developer",
+        "jobTitle": "Full-Stack Engineer",
         "email": "mailto:sysflow@gmail.com",
         "telephone": "+1-847-873-7448",
         "knowsAbout": [
-          "Laravel",
           "PHP",
+          "Laravel",
+          "Node.js",
+          "REST APIs",
+          "GraphQL",
+          "Webhooks",
+          "Queues",
+          "Redis",
+          "PostgreSQL",
           "Vue.js",
           "React",
           "Next.js",
           "TypeScript",
           "Tailwind CSS",
-          "MySQL",
-          "PostgreSQL",
-          "Redis",
           "AWS",
           "Docker",
           "NGINX",
-          "REST APIs",
-          "GraphQL",
-          "WebSockets",
-          "OAuth"
+          "OAuth 2.0",
+          "OpenAPI"
         ],
         "url": "https://stakbit.github.io/resume-site/"
       }
@@ -99,7 +101,7 @@
           </div>
           <div class="leading-tight">
             <div class="font-semibold">Jose Contreras</div>
-            <div class="text-xs text-slate-600">Full-Stack Web Developer</div>
+            <div class="text-xs text-slate-600">Full-Stack Engineer</div>
           </div>
         </div>
 
@@ -139,7 +141,7 @@
                   Jose Contreras
                 </h1>
                 <p class="mt-2 text-slate-600">
-                  Full-Stack Web Developer • Laravel • Vue • React / Next.js • AWS • Docker
+                  Full-Stack Engineer • High-Throughput Systems, APIs &amp; Automation
                 </p>
 
                 <div class="mt-5 flex flex-col gap-2 text-sm text-slate-700">
@@ -169,33 +171,46 @@
                     </span>
                     stakbit.github.io/resume-site
                   </a>
-
-                  <!-- Optional: add these when ready -->
-                  <!--
-                  <a class="inline-flex items-center gap-2 hover:underline" href="https://www.linkedin.com/in/YOURHANDLE" target="_blank" rel="noopener">LinkedIn</a>
-                  <a class="inline-flex items-center gap-2 hover:underline" href="https://github.com/stakbit" target="_blank" rel="noopener">GitHub</a>
-                  -->
                 </div>
               </div>
 
               <div class="flex flex-wrap gap-2 sm:justify-end">
+                <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">PHP</span>
                 <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">Laravel</span>
-                <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">Vue 3</span>
-                <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">React</span>
-                <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">Next.js</span>
+                <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">PostgreSQL</span>
+                <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">Redis</span>
                 <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">AWS</span>
                 <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">Docker</span>
               </div>
             </div>
 
             <div class="mt-8 border-t border-slate-200 pt-6">
-              <h2 class="text-sm font-semibold tracking-wide text-slate-900 uppercase">About</h2>
+              <h2 class="text-sm font-semibold tracking-wide text-slate-900 uppercase">Summary</h2>
               <p class="mt-3 text-slate-700 leading-relaxed">
-                Senior full-stack web developer specializing in Laravel and modern JavaScript frameworks.
-                I build scalable APIs, real-time features, and clean, responsive UIs for high-traffic and regulated environments.
-                Comfortable owning architecture end-to-end, leading small teams, and shipping fast with strong DevOps discipline
-                (Docker, AWS, CI/CD).
+                Senior full-stack engineer focused on high-throughput web applications and APIs built with PHP and modern JavaScript.
+                Delivers scalable, event-driven systems (queues, caching, webhooks) with production-grade ops across Docker, AWS, CI/CD, and monitoring.
+                Owns architecture end-to-end, partners with growth/ops, and debugs revenue-critical issues where correctness and trust matter.
               </p>
+            </div>
+
+            <div class="mt-6 border-t border-slate-200 pt-6">
+              <h2 class="text-sm font-semibold tracking-wide text-slate-900 uppercase">Selected Impact</h2>
+              <ul class="mt-3 space-y-2 text-slate-700 text-sm list-disc pl-5">
+                <li>
+                  Owned and scaled an insurance quoting platform end-to-end, including a PostgreSQL domain model, secure partner API integrations,
+                  and Redis-backed caching/queues; supported multiple database-configurable Vue interfaces.
+                </li>
+                <li>
+                  Shipped a real-time messaging app in under one month using PHP/Vue/WebSockets, replacing a deprecated third-party service;
+                  operated in production 2+ years with company-wide adoption.
+                </li>
+                <li>
+                  Led a 3-engineer, 48-hour build and deploy of a real-time claims-mapping app during the Texas floods, improving response time and reducing operational cost.
+                </li>
+                <li>
+                  Improved performance and reliability across high-traffic PHP applications through query/index tuning, caching, background jobs, and production-grade monitoring and runbooks.
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -211,66 +226,66 @@
             </div>
 
             <div class="mt-6 grid gap-4 sm:grid-cols-2">
-              <!-- Skill Card -->
               <div class="rounded-2xl border border-slate-200 p-5">
                 <h3 class="font-semibold">Backend &amp; APIs</h3>
-                <div class="mt-3 flex flex-wrap gap-2 text-sm">
-                  <span class="chip">PHP 8</span><span class="chip">Laravel 12 (Sanctum/Passport)</span><span class="chip">Node.js</span>
-                  <span class="chip">REST</span><span class="chip">GraphQL</span><span class="chip">WebSockets</span><span class="chip">OAuth</span>
-                </div>
+                <p class="mt-2 text-sm text-slate-700">
+                  PHP 8.x, Laravel (Sanctum/Passport, service container), Livewire, Node.js, REST APIs, GraphQL, WebSockets, OAuth 2.0,
+                  OpenAPI/Swagger, webhooks, queues/background jobs, idempotency, deduplication, retries/backoff, rate limiting
+                </p>
               </div>
 
               <div class="rounded-2xl border border-slate-200 p-5">
                 <h3 class="font-semibold">Frontend</h3>
-                <div class="mt-3 flex flex-wrap gap-2 text-sm">
-                  <span class="chip">Vue 3 + Vite</span><span class="chip">Pinia/Vuex</span><span class="chip">Vue Router</span>
-                  <span class="chip">React</span><span class="chip">Next.js</span>
-                  <span class="chip">TypeScript</span><span class="chip">JavaScript</span><span class="chip">Tailwind CSS</span><span class="chip">Responsive UI</span>
-                </div>
+                <p class="mt-2 text-sm text-slate-700">
+                  Vue 3 + Vite, Pinia (Vuex), Nuxt, React, Next.js, JavaScript/TypeScript, Tailwind CSS, responsive UI,
+                  accessibility (a11y), testing (Vitest, Jest)
+                </p>
               </div>
 
               <div class="rounded-2xl border border-slate-200 p-5">
                 <h3 class="font-semibold">Data &amp; Storage</h3>
-                <div class="mt-3 flex flex-wrap gap-2 text-sm">
-                  <span class="chip">MySQL 8</span><span class="chip">PostgreSQL (PostGIS)</span><span class="chip">Redis (cache/queues/Horizon)</span>
-                  <span class="chip">MongoDB</span><span class="chip">SQLite</span><span class="chip">Amazon S3</span>
-                </div>
+                <p class="mt-2 text-sm text-slate-700">
+                  MySQL 8, PostgreSQL (PostGIS), Redis (cache/queues/Horizon), MongoDB, SQLite, Amazon S3 (object storage),
+                  data modeling, indexing/query optimization
+                </p>
               </div>
 
               <div class="rounded-2xl border border-slate-200 p-5">
                 <h3 class="font-semibold">DevOps &amp; Cloud</h3>
-                <div class="mt-3 flex flex-wrap gap-2 text-sm">
-                  <span class="chip">AWS (EC2/S3)</span><span class="chip">Laravel Forge</span><span class="chip">Docker &amp; Compose</span>
-                  <span class="chip">NGINX</span><span class="chip">Linux</span><span class="chip">Supervisor</span><span class="chip">CI/CD (Bitbucket Pipelines)</span><span class="chip">Git</span>
-                </div>
+                <p class="mt-2 text-sm text-slate-700">
+                  AWS (EC2, S3, RDS), Laravel Forge, Docker &amp; Docker Compose, NGINX, Linux, Supervisor,
+                  CI/CD (Bitbucket Pipelines), Git, CloudWatch
+                </p>
               </div>
 
               <div class="rounded-2xl border border-slate-200 p-5">
                 <h3 class="font-semibold">Observability &amp; QA</h3>
-                <div class="mt-3 flex flex-wrap gap-2 text-sm">
-                  <span class="chip">Monitoring/alerts</span><span class="chip">Logging</span><span class="chip">PHPUnit/Pest</span><span class="chip">Postman</span><span class="chip">Performance tuning</span>
-                </div>
+                <p class="mt-2 text-sm text-slate-700">
+                  logging/monitoring/alerting, structured logs, PHPUnit/Pest, Postman, performance/load testing
+                </p>
               </div>
 
               <div class="rounded-2xl border border-slate-200 p-5">
                 <h3 class="font-semibold">Integrations &amp; Messaging</h3>
-                <div class="mt-3 flex flex-wrap gap-2 text-sm">
-                  <span class="chip">Twilio (SMS)</span><span class="chip">Mailchimp</span><span class="chip">Zapier</span><span class="chip">Webhooks</span>
-                  <span class="chip">Google Analytics/Optimize</span><span class="chip">WordPress (custom plugins)</span>
-                </div>
+                <p class="mt-2 text-sm text-slate-700">
+                  webhooks &amp; third-party APIs, analytics instrumentation, payment processors, Twilio (SMS), Mailchimp,
+                  Pusher (real-time), Google Analytics/Optimize
+                </p>
               </div>
 
               <div class="rounded-2xl border border-slate-200 p-5 sm:col-span-2">
-                <h3 class="font-semibold">AI / LLMs</h3>
-                <p class="mt-2 text-sm text-slate-600">
-                  OpenAI, Anthropic Claude (tool use/agent patterns, retrieval/RAG)
+                <h3 class="font-semibold">AI/LLMs/Automation</h3>
+                <p class="mt-2 text-sm text-slate-700">
+                  OpenAI, Anthropic, Gemini, Ollama, n8n, Zapier; LLM integrations (tools/agents),
+                  RAG (retrieval-augmented generation)
                 </p>
               </div>
 
               <div class="rounded-2xl border border-slate-200 p-5 sm:col-span-2">
                 <h3 class="font-semibold">Practices</h3>
-                <p class="mt-2 text-sm text-slate-600">
-                  Agile/Scrum, code reviews, runbooks, security (SSL/TLS, IP allowlists, API key management)
+                <p class="mt-2 text-sm text-slate-700">
+                  Agile/Scrum, code reviews, CI-driven development, runbooks, incident response/postmortems,
+                  security (TLS, IP allowlists, secrets/API key management)
                 </p>
               </div>
             </div>
@@ -288,7 +303,6 @@
             </div>
 
             <div class="mt-8 space-y-8">
-              <!-- Role -->
               <article>
                 <div class="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
                   <h3 class="text-base font-semibold">
@@ -298,33 +312,29 @@
                 </div>
                 <ul class="mt-3 space-y-2 text-sm text-slate-700 list-disc pl-5">
                   <li>
-                    Built PrudentPet’s quoting platform end-to-end: UML/Postgres data model, secure partner API integrations,
-                    and multiple Vue.js UIs configurable via database. Ran A/B tests (Google Optimize) with a custom in-house
-                    analytics system. Delivered customer and agent portals and automated policy workflows via Mailchimp, Twilio (SMS),
-                    and Zapier. Orchestrated scheduled jobs across a distributed architecture to keep systems in sync. Built ad-hoc
-                    automated reporting and integrated server-hosted BI dashboards.
+                    Owned and evolved PrudentPet’s high-traffic quoting platform: PostgreSQL data model, secure partner API integrations,
+                    Redis caching/queues, and multiple Vue-based UIs configurable via database; delivered customer and agent portals.
                   </li>
                   <li>
-                    Designed and shipped a real-time messaging app to replace a deprecated third-party service (Laravel, Vue.js with Vite,
-                    Tailwind, MySQL 8, WebSockets/Pusher). Delivered in under one month; in production 2+ years with company-wide adoption.
+                    Enabled growth experimentation and reporting: Google Optimize A/B tests backed by a custom analytics system; automated reporting and integrated BI dashboards.
                   </li>
                   <li>
-                    Led a 3-engineer, 48-hour sprint to build a real-time claims-mapping app during the Texas floods—ingested claims, mapped submerged vehicles,
-                    routed tow trucks, and synced claim status live—cutting response times and saving the company thousands.
+                    Built and hardened event-driven workflows across quoting, portals, and messaging (webhooks, retries, safe reprocessing); orchestrated scheduled jobs/queues to keep distributed systems in sync.
                   </li>
                   <li>
-                    Served as sole developer/architect for ClaimPix and MoveMatcher—DB schema, APIs, UI—and stood up surrounding systems (CI/CD, monitoring,
-                    access controls, runbooks). Transitioned ownership post-launch to focus on PrudentPet, the primary revenue driver.
+                    Designed and shipped a real-time messaging app (Laravel, Vue, WebSockets/Pusher) to replace a deprecated third-party service; delivered in under one month and operated in production 2+ years.
                   </li>
                   <li>
-                    Led a 4-month daycare-platform POC delivering real-time distance-based routing and provider search on PostgreSQL/PostGIS; shelved post-POC after a business-model review.
+                    Led a 3-engineer, 48-hour sprint to build and deploy a real-time claims-mapping app during the Texas floods, routing tow trucks and syncing claim status live.
                   </li>
                   <li>
-                    Supported 40+ WordPress sites: security + disaster-recovery controls (IP allowlisting, SSL, automated backups, VPN, API encryption, key management).
-                    Built custom plugins including a responsive embedded quoting widget generating PrudentPet quotes directly in the CMS.
+                    Served as sole developer/architect for ClaimPix and MoveMatcher: database schema, APIs, UI, CI/CD, monitoring, access controls, and runbooks; transitioned ownership post-launch.
                   </li>
                   <li>
-                    Established DevOps/sysops standards: AWS EC2/S3, Laravel Forge provisioning, Bitbucket/Jira/Confluence workflows, and CI/CD + monitoring to maintain uptime, performance, and security.
+                    Established deployment and observability standards across applications (Docker, AWS, CI/CD, alerts), documenting operational playbooks to support uptime and faster releases.
+                  </li>
+                  <li>
+                    Delivered a 4-month PostGIS routing/search proof-of-concept to match providers by real-time distance and improve conversion for location-based workflows.
                   </li>
                 </ul>
               </article>
@@ -334,99 +344,71 @@
               <article>
                 <div class="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
                   <h3 class="text-base font-semibold">
-                    PCTEL (formerly Nexgen Wireless) <span class="text-slate-400">—</span> Web Developer
+                    Earlier Experience
                   </h3>
-                  <div class="text-sm text-slate-500">05/2011 – 11/2015</div>
                 </div>
-                <ul class="mt-3 space-y-2 text-sm text-slate-700 list-disc pl-5">
-                  <li>
-                    Architected and led delivery of enterprise-grade analytics platforms for top telecoms—network optimization, automated reporting (dynamic Excel outputs),
-                    PostgreSQL performance for massive datasets, and full-stack UI modernization.
-                  </li>
-                </ul>
-              </article>
 
-              <div class="border-t border-slate-200"></div>
+                <div class="mt-4 space-y-6 text-sm text-slate-700">
+                  <div>
+                    <div class="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
+                      <div class="font-semibold">Web Developer — PCTEL (formerly Nexgen Wireless)</div>
+                      <div class="text-slate-500">05/2011 – 11/2015</div>
+                    </div>
+                    <p class="mt-1">
+                      Led delivery of analytics dashboards for telecom clients; optimized PostgreSQL for large datasets to improve query performance and responsiveness.
+                    </p>
+                  </div>
 
-              <article>
-                <div class="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
-                  <h3 class="text-base font-semibold">
-                    ForSaleByOwner (Tribune Company) <span class="text-slate-400">—</span> Web Developer
-                  </h3>
-                  <div class="text-sm text-slate-500">08/2009 – 05/2011</div>
+                  <div>
+                    <div class="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
+                      <div class="font-semibold">Web Developer — ForSaleByOwner (Chicago Tribune Company)</div>
+                      <div class="text-slate-500">08/2009 – 05/2011</div>
+                    </div>
+                    <p class="mt-1">
+                      Delivered integration-heavy platform improvements—photo workflows, appraisal APIs, and financial operations—focused on performance, correctness, and maintainability.
+                    </p>
+                  </div>
+
+                  <div>
+                    <div class="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
+                      <div class="font-semibold">Web Developer — Tukaiz Marketing</div>
+                      <div class="text-slate-500">02/2008 – 08/2009</div>
+                    </div>
+                    <p class="mt-1">
+                      Implemented geo-targeted lead routing (Google Maps API) and high-volume email automation (3M+ sends/week), improving lead response and campaign efficiency.
+                    </p>
+                  </div>
+
+                  <div>
+                    <div class="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
+                      <div class="font-semibold">Web Developer — Zacks Investment Research</div>
+                      <div class="text-slate-500">04/2007 – 02/2008</div>
+                    </div>
+                    <p class="mt-1">
+                      Built a custom CMS with granular permissions for high-traffic financial sites and improved engineering workflows (testing, deployment, and maintainability).
+                    </p>
+                  </div>
+
+                  <div>
+                    <div class="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
+                      <div class="font-semibold">Web Developer — Where2GetIt</div>
+                      <div class="text-slate-500">12/2006 – 04/2007</div>
+                    </div>
+                    <p class="mt-1">
+                      Built reporting and analytics features and improved conversion workflows with a focus on performance and usability.
+                    </p>
+                  </div>
+
+                  <div>
+                    <div class="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
+                      <div class="font-semibold">Dev Ops / Web Developer — Motorola</div>
+                      <div class="text-slate-500">03/1998 – 12/2006</div>
+                    </div>
+                    <p class="mt-1">
+                      Managed Unix/Windows production environments and web infrastructure (NGINX), automating deployments and operational workflows while improving uptime, performance, and incident response for internal systems.
+                    </p>
+                  </div>
                 </div>
-                <ul class="mt-3 space-y-2 text-sm text-slate-700 list-disc pl-5">
-                  <li>
-                    Modernized platform features: scalable photo workflows, appraisal API integrations, financial ops modules, and legacy refactors for performance and maintainability.
-                  </li>
-                </ul>
-              </article>
-
-              <div class="border-t border-slate-200"></div>
-
-              <article>
-                <div class="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
-                  <h3 class="text-base font-semibold">
-                    Tukaiz Marketing <span class="text-slate-400">—</span> Web Developer
-                  </h3>
-                  <div class="text-sm text-slate-500">02/2008 – 08/2009</div>
-                </div>
-                <ul class="mt-3 space-y-2 text-sm text-slate-700 list-disc pl-5">
-                  <li>
-                    Built geo-targeted lead routing with Google Maps API, scaled email automation to 3M+ weekly sends, and shipped resilient data systems that streamlined org-wide workflows.
-                  </li>
-                </ul>
-              </article>
-
-              <div class="border-t border-slate-200"></div>
-
-              <article>
-                <div class="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
-                  <h3 class="text-base font-semibold">
-                    Zacks Investment Research <span class="text-slate-400">—</span> Web Developer
-                  </h3>
-                  <div class="text-sm text-slate-500">04/2007 – 02/2008</div>
-                </div>
-                <ul class="mt-3 space-y-2 text-sm text-slate-700 list-disc pl-5">
-                  <li>
-                    Delivered a custom CMS for high-traffic financial sites with granular access controls, re-architected modules for scale, and modernized processes via MVC + version control.
-                  </li>
-                </ul>
-              </article>
-
-              <div class="border-t border-slate-200"></div>
-
-              <article>
-                <div class="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
-                  <h3 class="text-base font-semibold">
-                    Where2GetIt <span class="text-slate-400">—</span> Web Developer
-                  </h3>
-                  <div class="text-sm text-slate-500">12/2006 – 04/2007</div>
-                </div>
-                <ul class="mt-3 space-y-2 text-sm text-slate-700 list-disc pl-5">
-                  <li>
-                    Built a high-performance reporting app to improve client insights while enhancing UX and optimizing conversion workflows.
-                  </li>
-                </ul>
-              </article>
-
-              <div class="border-t border-slate-200"></div>
-
-              <article>
-                <div class="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
-                  <h3 class="text-base font-semibold">
-                    Motorola <span class="text-slate-400">—</span> System Administrator / Developer
-                  </h3>
-                  <div class="text-sm text-slate-500">03/1998 – 12/2006</div>
-                </div>
-                <ul class="mt-3 space-y-2 text-sm text-slate-700 list-disc pl-5">
-                  <li>
-                    Managed hybrid Unix/Windows environments and high-traffic IIS/Apache servers hosting dynamic internal apps—streamlining deployments, upgrades, and operations.
-                  </li>
-                  <li>
-                    Built internal tooling and automation, including real-time job tracking and scripted workflows for account management, content publishing, and OS image rollouts.
-                  </li>
-                </ul>
               </article>
             </div>
           </div>
@@ -441,7 +423,7 @@
             <ul class="mt-4 space-y-2 text-sm text-slate-700">
               <li><span class="font-semibold">M.S., Computer Information Systems</span> — University of Phoenix, 2000</li>
               <li><span class="font-semibold">B.S., Electrical Engineering</span> — DeVry Institute of Technology, 1994</li>
-              <li><span class="font-semibold">Certifications:</span> MCSA, CompTIA Security+, Network+, A+</li>
+              <li><span class="font-semibold">Certifications:</span> MCSA; CompTIA Security+, Network+, A+</li>
             </ul>
           </div>
         </div>
@@ -452,22 +434,6 @@
         <a class="hover:underline" href="https://github.com/stakbit/resume-site" target="_blank" rel="noopener">View on GitHub</a>
       </footer>
     </main>
-
-    <!-- Chip styling -->
-    <style>
-      .chip {
-        display: inline-flex;
-        align-items: center;
-        border-radius: 9999px;
-        border: 1px solid rgb(226 232 240);
-        background: rgb(248 250 252);
-        padding: 0.25rem 0.6rem;
-        line-height: 1.2;
-        color: rgb(51 65 85);
-        font-weight: 500;
-        font-size: 0.875rem;
-      }
-    </style>
 
     <script>
       document.getElementById("y").textContent = new Date().getFullYear();
