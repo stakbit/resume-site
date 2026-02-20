@@ -1,442 +1,511 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Jose Contreras — Full-Stack Engineer</title>
+<!doctype ht:contentReference[oaicite:2]{index=2}<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Jose Contreras — Full-Stack Engineer specializing in high-throughput systems, APIs, and automation (PHP, Laravel, Vue/React, AWS, Docker)." />
+  <title>Jose Contreras — Full-Stack Engineer</title>
 
-    <meta
-      name="description"
-      content="Senior full-stack engineer focused on high-throughput web applications and APIs. Scalable, event-driven systems (queues, caching, webhooks) with production-grade ops across Docker, AWS, CI/CD, and monitoring."
-    />
-    <meta property="og:title" content="Jose Contreras — Full-Stack Engineer" />
-    <meta
-      property="og:description"
-      content="High-throughput systems, APIs & automation. PHP/Laravel, Vue/React/Next.js, Postgres/Redis, AWS/Docker, event-driven workflows."
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://stakbit.github.io/resume-site/" />
-    <link rel="canonical" href="https://stakbit.github.io/resume-site/" />
+  <style>
+    :root{
+      --bg:#0b0f19;
+      --card:#0f172a;
+      --text:#e5e7eb;
+      --muted:#a7b0c0;
+      --line:rgba(255,255,255,.10);
+      --chip:rgba(255,255,255,.08);
+      --link:#9dd7ff;
+      --link2:#b6f7d1;
+      --shadow: 0 16px 40px rgba(0,0,0,.35);
+      --radius: 18px;
+      --w: 980px;
+    }
 
-    <!-- TailwindCSS (CDN) with Typography plugin -->
-    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              sans: [
-                "Inter",
-                "ui-sans-serif",
-                "system-ui",
-                "Segoe UI",
-                "Roboto",
-                "Helvetica",
-                "Arial",
-                "Noto Sans",
-                "Apple Color Emoji",
-                "Segoe UI Emoji",
-              ],
-            },
-            boxShadow: {
-              soft: "0 10px 30px rgba(2, 6, 23, 0.08)",
-            },
-          },
-        },
-      };
-    </script>
+    *{ box-sizing:border-box; }
+    html,body{ height:100%; }
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      color:var(--text);
+      background:
+        radial-gradient(1200px 600px at 10% -10%, rgba(157,215,255,.22), transparent 60%),
+        radial-gradient(900px 600px at 90% 0%, rgba(182,247,209,.15), transparent 60%),
+        radial-gradient(900px 500px at 50% 120%, rgba(157,215,255,.10), transparent 60%),
+        var(--bg);
+      line-height:1.55;
+    }
 
-    <style>
-      @media print {
-        .no-print { display: none !important; }
-        body { background: #fff !important; }
-        main { margin: 0 !important; padding: 0 !important; }
-        .card { box-shadow: none !important; border: 1px solid #e5e7eb !important; }
-        a { text-decoration: none !important; color: #000 !important; }
-      }
-    </style>
+    a{ color:var(--link); text-decoration:none; }
+    a:hover{ text-decoration:underline; }
 
-    <!-- JSON-LD Schema.org Person -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Jose Contreras",
-        "jobTitle": "Full-Stack Engineer",
-        "email": "mailto:sysflow@gmail.com",
-        "telephone": "+1-847-873-7448",
-        "knowsAbout": [
-          "PHP",
-          "Laravel",
-          "Node.js",
-          "REST APIs",
-          "GraphQL",
-          "Webhooks",
-          "Queues",
-          "Redis",
-          "PostgreSQL",
-          "Vue.js",
-          "React",
-          "Next.js",
-          "TypeScript",
-          "Tailwind CSS",
-          "AWS",
-          "Docker",
-          "NGINX",
-          "OAuth 2.0",
-          "OpenAPI"
-        ],
-        "url": "https://stakbit.github.io/resume-site/"
-      }
-    </script>
-  </head>
+    .skip{
+      position:absolute; left:-999px; top:auto;
+      width:1px; height:1px; overflow:hidden;
+    }
+    .skip:focus{
+      left:16px; top:16px;
+      width:auto; height:auto;
+      padding:10px 12px;
+      background:#111827;
+      border:1px solid var(--line);
+      border-radius:12px;
+      z-index:9999;
+    }
 
-  <body class="bg-slate-50 text-slate-900 antialiased">
-    <!-- Top bar -->
-    <div class="sticky top-0 z-50 border-b border-slate-200 bg-white/85 backdrop-blur">
-      <div class="mx-auto max-w-5xl px-6 py-3 flex items-center justify-between">
-        <div class="flex items-center gap-3">
-          <div class="h-9 w-9 rounded-xl bg-slate-900 text-white grid place-items-center font-semibold">
-            JC
-          </div>
-          <div class="leading-tight">
-            <div class="font-semibold">Jose Contreras</div>
-            <div class="text-xs text-slate-600">Full-Stack Engineer</div>
-          </div>
-        </div>
+    .wrap{ max-width:var(--w); margin:0 auto; padding:28px 18px 60px; }
 
-        <div class="no-print flex items-center gap-2">
-          <a
-            href="./Jose_Contreras_Full_Stack_Developer_Resume_2026.pdf"
-            class="inline-flex items-center gap-2 rounded-xl bg-slate-900 px-3 py-2 text-sm font-semibold text-white hover:bg-slate-800"
-            download
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M12 3a1 1 0 0 1 1 1v8.586l2.293-2.293a1 1 0 1 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-4-4A1 1 0 1 1 8.707 10.293L11 12.586V4a1 1 0 0 1 1-1ZM5 19a1 1 0 0 1 0-2h14a1 1 0 1 1 0 2H5Z"/>
-            </svg>
-            PDF
-          </a>
+    .topbar{
+      position:sticky; top:0;
+      backdrop-filter: blur(10px);
+      background: linear-gradient(to bottom, rgba(11,15,25,.86), rgba(11,15,25,.55));
+      border-bottom:1px solid var(--line);
+      z-index:50;
+    }
+    .topbar-inner{
+      max-width:var(--w); margin:0 auto;
+      padding:12px 18px;
+      display:flex; gap:12px;
+      align-items:center; justify-content:space-between;
+    }
 
-          <button
-            onclick="window.print()"
-            class="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm font-semibold hover:bg-slate-50"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M6 7V3h12v4H6Zm11 2a3 3 0 0 1 3 3v3h-3v4H7v-4H4v-3a3 3 0 0 1 3-3h10Zm-2 9v-3H9v3h6Z"/>
-            </svg>
-            Print
-          </button>
+    .brand{
+      display:flex; align-items:center; gap:12px;
+      min-width:0;
+    }
+    .monogram{
+      width:38px; height:38px; border-radius:12px;
+      display:grid; place-items:center;
+      background: linear-gradient(135deg, rgba(157,215,255,.25), rgba(182,247,209,.20));
+      border:1px solid rgba(255,255,255,.14);
+      font-weight:700;
+      letter-spacing:.5px;
+      flex: 0 0 auto;
+    }
+    .brand-text{ min-width:0; }
+    .brand-text .name{
+      font-weight:700;
+      font-size:14px;
+      line-height:1.1;
+      white-space:nowrap;
+      overflow:hidden;
+      text-overflow:ellipsis;
+    }
+    .brand-text .role{
+      color:var(--muted);
+      font-size:12px;
+      white-space:nowrap;
+      overflow:hidden;
+      text-overflow:ellipsis;
+    }
+
+    .actions{
+      display:flex; gap:10px; align-items:center; flex-wrap:wrap;
+      justify-content:flex-end;
+    }
+    .btn{
+      display:inline-flex; align-items:center; gap:8px;
+      padding:9px 12px;
+      border-radius:12px;
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.06);
+      color:var(--text);
+      font-weight:600;
+      font-size:13px;
+      text-decoration:none;
+      cursor:pointer;
+      user-select:none;
+    }
+    .btn:hover{ background: rgba(255,255,255,.10); text-decoration:none; }
+    .btn.primary{
+      border-color: rgba(157,215,255,.35);
+      background: rgba(157,215,255,.10);
+    }
+
+    .card{
+      background: rgba(15,23,42,.65);
+      border:1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    header.hero{
+      padding:26px 22px;
+      margin-top:18px;
+    }
+    .hero h1{
+      margin:0;
+      font-size:34px;
+      line-height:1.15;
+      letter-spacing:-.02em;
+    }
+    .hero .headline{
+      margin:8px 0 0;
+      color:var(--muted);
+      font-size:16px;
+    }
+    .hero .meta{
+      margin-top:14px;
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px 16px;
+      color:var(--text);
+      align-items:center;
+    }
+    .meta a{ color:var(--text); text-decoration:none; }
+    .meta a:hover{ text-decoration:underline; }
+    .pill-row{
+      margin-top:14px;
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px;
+    }
+    .pill{
+      background: var(--chip);
+      border:1px solid var(--line);
+      padding:6px 10px;
+      border-radius:999px;
+      font-size:12px;
+      color:var(--text);
+    }
+
+    nav.jump{
+      margin-top:16px;
+      padding:14px 16px;
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px;
+      align-items:center;
+    }
+    nav.jump a{
+      display:inline-flex;
+      padding:7px 10px;
+      border-radius:999px;
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.05);
+      color:var(--text);
+      font-weight:600;
+      font-size:12px;
+      text-decoration:none;
+    }
+    nav.jump a:hover{ background: rgba(255,255,255,.09); }
+
+    main{ margin-top:16px; display:grid; gap:14px; }
+    section.block{ padding:20px 22px; }
+    section.block h2{
+      margin:0 0 10px;
+      font-size:18px;
+      letter-spacing:-.01em;
+    }
+    section.block p{ margin:0; color:var(--text); }
+    .muted{ color:var(--muted); }
+
+    ul.clean{
+      margin:10px 0 0;
+      padding-left:18px;
+    }
+    ul.clean li{ margin:6px 0; }
+
+    .skills-grid{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap:12px;
+      margin-top:10px;
+    }
+    @media (min-width: 860px){
+      .skills-grid{ grid-template-columns: 1fr 1fr; }
+    }
+
+    .skill{
+      padding:14px 14px;
+      border:1px solid var(--line);
+      border-radius: 14px;
+      background: rgba(255,255,255,.04);
+    }
+    .skill h3{
+      margin:0 0 6px;
+      font-size:13px;
+      letter-spacing:.01em;
+      text-transform:none;
+    }
+    .skill p{
+      margin:0;
+      color:var(--muted);
+      font-size:13px;
+    }
+
+    .job{
+      margin-top:12px;
+      padding-top:12px;
+      border-top:1px solid var(--line);
+    }
+    .job:first-of-type{ margin-top:0; padding-top:0; border-top:none; }
+
+    .job-head{
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px 14px;
+      align-items:baseline;
+      justify-content:space-between;
+    }
+    .job-title{
+      font-weight:800;
+      letter-spacing:-.01em;
+    }
+    .job-dates{
+      color:var(--muted);
+      font-size:13px;
+      white-space:nowrap;
+    }
+    .job-sub{
+      margin:6px 0 0;
+      color:var(--muted);
+    }
+
+    footer{
+      margin-top:18px;
+      padding:18px 6px 0;
+      color:var(--muted);
+      font-size:12px;
+      text-align:center;
+    }
+
+    /* PRINT */
+    @media print{
+      :root{ --bg:#ffffff; --text:#111827; --muted:#374151; --line:#e5e7eb; --chip:#f3f4f6; }
+      body{ background:#fff; color:#111827; }
+      .topbar, .no-print{ display:none !important; }
+      .wrap{ padding:0; max-width: 100%; }
+      .card{ box-shadow:none; background:#fff; border-color:#e5e7eb; }
+      a{ color:#111827; text-decoration:none; }
+      .pill{ border-color:#e5e7eb; }
+      section.block{ padding:16px 18px; }
+      header.hero{ padding:18px; }
+    }
+  </style>
+</head>
+
+<body>
+  <a class="skip" href="#content">Skip to content</a>
+
+  <div class="topbar no-print">
+    <div class="topbar-inner">
+      <div class="brand" aria-label="Site header">
+        <div class="monogram" aria-hidden="true">JC</div>
+        <div class="brand-text">
+          <div class="name">Jose Contreras</div>
+          <div class="role">Full-Stack Engineer</div>
         </div>
       </div>
+
+      <div class="actions">
+        <!-- Put the PDF in the same folder as index.html, or update this href. -->
+        <a class="btn primary" href="Jose_Contreras_Full_Stack_Developer_Resume_2026.pdf" target="_blank" rel="noopener">
+          PDF
+        </a>
+        <button class="btn" type="button" onclick="window.print()">
+          Print
+        </button>
+      </div>
     </div>
+  </div>
 
-    <main class="mx-auto max-w-5xl px-6 py-10">
-      <!-- Hero -->
-      <section class="mb-10">
-        <div class="card rounded-3xl border border-slate-200 bg-white shadow-soft">
-          <div class="p-7 sm:p-10">
-            <div class="flex flex-col gap-6 sm:flex-row sm:items-start sm:justify-between">
-              <div>
-                <h1 class="text-3xl sm:text-4xl font-bold tracking-tight">
-                  Jose Contreras
-                </h1>
-                <p class="mt-2 text-slate-600">
-                  Full-Stack Engineer • High-Throughput Systems, APIs &amp; Automation
-                </p>
+  <div class="wrap">
+    <header class="hero card" id="content">
+      <h1>Jose Contreras</h1>
+      <div class="headline">Full-Stack Engineer • High-Throughput Systems, APIs &amp; Automation</div>
 
-                <div class="mt-5 flex flex-col gap-2 text-sm text-slate-700">
-                  <a class="inline-flex items-center gap-2 hover:underline" href="mailto:sysflow@gmail.com">
-                    <span class="inline-flex h-7 w-7 items-center justify-center rounded-lg bg-slate-100">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M2 6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v.217l-10 6.25L2 6.217V6Zm0 2.383V18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8.383l-9.445 5.898a2 2 0 0 1-2.11 0L2 8.383Z"/>
-                      </svg>
-                    </span>
-                    sysflow@gmail.com
-                  </a>
+      <div class="meta" aria-label="Contact information">
+        <a href="mailto:sysflow@gmail.com">sysflow@gmail.com</a>
+        <a href="tel:+18478737448">847-873-7448</a>
+        <a href="./">stakbit.github.io/resume-site</a>
+      </div>
 
-                  <a class="inline-flex items-center gap-2 hover:underline" href="tel:+18478737448">
-                    <span class="inline-flex h-7 w-7 items-center justify-center rounded-lg bg-slate-100">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M6.62 10.79a15.1 15.1 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 0 1 1 1v3.49a1 1 0 0 1-1 1C10.3 21 3 13.7 3 4.99a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.46.57 3.58a1 1 0 0 1-.25 1.01l-2.2 2.2Z"/>
-                      </svg>
-                    </span>
-                    847-873-7448
-                  </a>
+      <div class="pill-row" aria-label="Technology highlights">
+        <span class="pill">PHP</span>
+        <span class="pill">Laravel</span>
+        <span class="pill">Vue / React</span>
+        <span class="pill">PostgreSQL</span>
+        <span class="pill">Redis</span>
+        <span class="pill">AWS</span>
+        <span class="pill">Docker</span>
+        <span class="pill">CI/CD</span>
+      </div>
 
-                  <a class="inline-flex items-center gap-2 hover:underline" href="https://stakbit.github.io/resume-site/" target="_blank" rel="noopener">
-                    <span class="inline-flex h-7 w-7 items-center justify-center rounded-lg bg-slate-100">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M12 2a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2Zm7.93 9h-3.25a15.08 15.08 0 0 0-1.1-5.05A8.018 8.018 0 0 1 19.93 11ZM12 4c.9 0 2.16 2.06 2.75 7H9.25C9.84 6.06 11.1 4 12 4ZM4.07 13h3.25a15.08 15.08 0 0 0 1.1 5.05A8.018 8.018 0 0 1 4.07 13Zm3.25-2H4.07a8.018 8.018 0 0 1 3.35-5.05A15.08 15.08 0 0 0 7.32 11Zm1.93 2h5.5c-.59 4.94-1.85 7-2.75 7s-2.16-2.06-2.75-7Zm7.43 0h3.25a8.018 8.018 0 0 1-3.35 5.05A15.08 15.08 0 0 0 16.68 13Zm0-2h-5.5c.59-4.94 1.85-7 2.75-7s2.16 2.06 2.75 7Z"/>
-                      </svg>
-                    </span>
-                    stakbit.github.io/resume-site
-                  </a>
-                </div>
-              </div>
+      <nav class="jump card no-print" aria-label="Jump links">
+        <a href="#summary">Summary</a>
+        <a href="#impact">Selected Impact</a>
+        <a href="#skills">Core Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+      </nav>
+    </header>
 
-              <div class="flex flex-wrap gap-2 sm:justify-end">
-                <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">PHP</span>
-                <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">Laravel</span>
-                <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">PostgreSQL</span>
-                <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">Redis</span>
-                <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">AWS</span>
-                <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">Docker</span>
-              </div>
-            </div>
+    <main>
+      <section class="block card" id="summary">
+        <h2>Summary</h2>
+        <p>
+          Senior full-stack engineer focused on building and maintaining high-throughput web applications and APIs using PHP and modern JavaScript frameworks.
+          Experienced with scalable, event-driven architectures (queues, caching, webhooks) and production operations across Docker, AWS, CI/CD, and monitoring.
+          Leads delivery, collaborates well across teams, and has experience optimizing websites for performance and reliability.
+        </p>
+      </section>
 
-            <div class="mt-8 border-t border-slate-200 pt-6">
-              <h2 class="text-sm font-semibold tracking-wide text-slate-900 uppercase">Summary</h2>
-              <p class="mt-3 text-slate-700 leading-relaxed">
-                Senior full-stack engineer focused on high-throughput web applications and APIs built with PHP and modern JavaScript.
-                Delivers scalable, event-driven systems (queues, caching, webhooks) with production-grade ops across Docker, AWS, CI/CD, and monitoring.
-                Owns architecture end-to-end, partners with growth/ops, and debugs revenue-critical issues where correctness and trust matter.
-              </p>
-            </div>
+      <section class="block card" id="impact">
+        <h2>Selected Impact</h2>
+        <ul class="clean">
+          <li>Owned and scaled an insurance quoting platform, including a PostgreSQL domain model, secure partner API integrations, and Redis-backed caching/queues; supported multiple database-configurable Vue interfaces.</li>
+          <li>Shipped a real-time messaging app in under one month using PHP/Vue/WebSockets, replacing a deprecated third-party service; operated in production 2+ years with company-wide adoption.</li>
+          <li>Led a 3-engineer, 48-hour build and deploy of a real-time claims-mapping app during the Texas floods, improving response time and reducing operational cost.</li>
+          <li>Strengthened production readiness across high-traffic PHP applications through query/index tuning, resilient background jobs, and repeatable runbooks/monitoring for safer releases and faster debugging.</li>
+          <li>Lead developer in a SaaS incubator, delivering multiple products from build to launch (schemas, APIs, front-end, containerized deployments) and hiring/transitioning engineers to support ongoing development.</li>
+        </ul>
+      </section>
 
-            <div class="mt-6 border-t border-slate-200 pt-6">
-              <h2 class="text-sm font-semibold tracking-wide text-slate-900 uppercase">Selected Impact</h2>
-              <ul class="mt-3 space-y-2 text-slate-700 text-sm list-disc pl-5">
-                <li>
-                  Owned and scaled an insurance quoting platform end-to-end, including a PostgreSQL domain model, secure partner API integrations,
-                  and Redis-backed caching/queues; supported multiple database-configurable Vue interfaces.
-                </li>
-                <li>
-                  Shipped a real-time messaging app in under one month using PHP/Vue/WebSockets, replacing a deprecated third-party service;
-                  operated in production 2+ years with company-wide adoption.
-                </li>
-                <li>
-                  Led a 3-engineer, 48-hour build and deploy of a real-time claims-mapping app during the Texas floods, improving response time and reducing operational cost.
-                </li>
-                <li>
-                  Improved performance and reliability across high-traffic PHP applications through query/index tuning, caching, background jobs, and production-grade monitoring and runbooks.
-                </li>
-              </ul>
-            </div>
+      <section class="block card" id="skills">
+        <h2>Core Skills</h2>
+        <p class="muted">Backend, frontend, and ops — optimized for reliability, throughput, and clean integrations.</p>
+
+        <div class="skills-grid">
+          <div class="skill">
+            <h3>Backend &amp; APIs</h3>
+            <p>PHP 8.x, Laravel (Sanctum/Passport, service container), Livewire, Node.js, REST APIs, GraphQL, WebSockets, OAuth 2.0, OpenAPI/Swagger, webhooks, queues/background jobs, idempotency, deduplication, retries/backoff, rate limiting</p>
+          </div>
+
+          <div class="skill">
+            <h3>Frontend</h3>
+            <p>Vue 3 + Vite, Pinia (Vuex), Nuxt, React, Next.js, JavaScript/TypeScript, Tailwind CSS, responsive UI, accessibility (a11y), testing (Vitest, Jest)</p>
+          </div>
+
+          <div class="skill">
+            <h3>Website Optimization &amp; Instrumentation</h3>
+            <p>Google PageSpeed/Lighthouse, Core Web Vitals optimization, analytics setup/config (GA4/GTM), conversion tracking + custom funnel tracking scripts, heatmaps/session replay, tracking QA/validation</p>
+          </div>
+
+          <div class="skill">
+            <h3>Data &amp; Storage</h3>
+            <p>MySQL 8, PostgreSQL (PostGIS), Redis (cache/queues/Horizon), MongoDB, SQLite, Amazon S3 (object storage), data modeling, indexing/query optimization</p>
+          </div>
+
+          <div class="skill">
+            <h3>DevOps &amp; Cloud</h3>
+            <p>AWS (EC2, S3, RDS), Laravel Forge, Docker &amp; Docker Compose, NGINX, Linux, Supervisor, CI/CD (Bitbucket Pipelines), Git, CloudWatch</p>
+          </div>
+
+          <div class="skill">
+            <h3>Observability &amp; QA</h3>
+            <p>Structured logging, error tracking/alerting, production debugging, API testing (Postman), automated tests (PHPUnit/Pest, Jest/Vitest), release verification/smoke testing</p>
+          </div>
+
+          <div class="skill">
+            <h3>Integrations &amp; Messaging</h3>
+            <p>Email platforms (marketing + transactional), payments/subscriptions, support/CRM, chat/notifications, issue tracking/bug trackers</p>
+          </div>
+
+          <div class="skill">
+            <h3>AI/LLMs/Automation</h3>
+            <p>OpenAI, Anthropic, Gemini, Ollama, n8n, Zapier; LLM integrations (tools/agents), RAG (retrieval-augmented generation)</p>
+          </div>
+
+          <div class="skill" style="grid-column: 1 / -1;">
+            <h3>Practices</h3>
+            <p>Agile/Scrum, code reviews, CI-driven development, runbooks, incident response/postmortems, security (TLS, IP allowlists, secrets/API key management)</p>
           </div>
         </div>
       </section>
 
-      <!-- Skills -->
-      <section class="mb-10">
-        <div class="card rounded-3xl border border-slate-200 bg-white shadow-soft">
-          <div class="p-7 sm:p-10">
-            <div class="flex items-end justify-between gap-4">
-              <h2 class="text-xl font-bold tracking-tight">Core Skills</h2>
-              <p class="text-sm text-slate-500">Focused on performance, reliability, and clean integrations.</p>
+      <section class="block card" id="experience">
+        <h2>Professional Experience</h2>
+
+        <div class="job">
+          <div class="job-head">
+            <div class="job-title">Digital Initiatives LLC — Lead Web Developer</div>
+            <div class="job-dates">04/2016 – 09/2025</div>
+          </div>
+
+          <ul class="clean">
+            <li>Owned and evolved PrudentPet’s high-traffic quoting platform: PostgreSQL data model, secure partner API integrations, Redis caching/queues, and multiple Vue-based UIs configurable via database; delivered customer and agent portals.</li>
+            <li>Implemented experimentation support and reporting: Google Optimize A/B tests backed by a custom analytics system; automated reporting and integrated BI dashboards.</li>
+            <li>Built and hardened event-driven workflows across quoting, portals, and messaging (webhooks, retries, safe reprocessing); orchestrated scheduled jobs/queues to keep distributed systems in sync.</li>
+            <li>Designed and shipped a real-time messaging app (Laravel, Vue, WebSockets/Pusher) to replace a deprecated third-party service; delivered in under one month and operated in production 2+ years.</li>
+            <li>Led a 3-engineer, 48-hour sprint to build and deploy a real-time claims-mapping app during the Texas floods, routing tow trucks and syncing claim status live.</li>
+            <li>Served as sole developer/architect for ClaimPix and MoveMatcher: database schema, APIs, UI, CI/CD, monitoring, access controls, and runbooks; transitioned ownership post-launch.</li>
+            <li>Established deployment and observability standards across applications (Docker, AWS, CI/CD, alerts), documenting operational playbooks to support uptime and faster releases.</li>
+            <li>Delivered a 4-month PostGIS routing/search proof-of-concept to match providers by real-time distance and improve conversion for location-based workflows.</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="job-head">
+            <div class="job-title">Earlier Experience</div>
+            <div class="job-dates" aria-hidden="true"> </div>
+          </div>
+
+          <div class="job" style="border-top:none; padding-top:0;">
+            <div class="job-head">
+              <div class="job-title">PCTEL (formerly Nexgen Wireless) — Web Developer</div>
+              <div class="job-dates">05/2011 – 11/2015</div>
             </div>
+            <p class="job-sub">Led delivery of analytics dashboards for telecom clients; optimized PostgreSQL for large datasets to improve query performance and responsiveness.</p>
+          </div>
 
-            <div class="mt-6 grid gap-4 sm:grid-cols-2">
-              <div class="rounded-2xl border border-slate-200 p-5">
-                <h3 class="font-semibold">Backend &amp; APIs</h3>
-                <p class="mt-2 text-sm text-slate-700">
-                  PHP 8.x, Laravel (Sanctum/Passport, service container), Livewire, Node.js, REST APIs, GraphQL, WebSockets, OAuth 2.0,
-                  OpenAPI/Swagger, webhooks, queues/background jobs, idempotency, deduplication, retries/backoff, rate limiting
-                </p>
-              </div>
-
-              <div class="rounded-2xl border border-slate-200 p-5">
-                <h3 class="font-semibold">Frontend</h3>
-                <p class="mt-2 text-sm text-slate-700">
-                  Vue 3 + Vite, Pinia (Vuex), Nuxt, React, Next.js, JavaScript/TypeScript, Tailwind CSS, responsive UI,
-                  accessibility (a11y), testing (Vitest, Jest)
-                </p>
-              </div>
-
-              <div class="rounded-2xl border border-slate-200 p-5">
-                <h3 class="font-semibold">Data &amp; Storage</h3>
-                <p class="mt-2 text-sm text-slate-700">
-                  MySQL 8, PostgreSQL (PostGIS), Redis (cache/queues/Horizon), MongoDB, SQLite, Amazon S3 (object storage),
-                  data modeling, indexing/query optimization
-                </p>
-              </div>
-
-              <div class="rounded-2xl border border-slate-200 p-5">
-                <h3 class="font-semibold">DevOps &amp; Cloud</h3>
-                <p class="mt-2 text-sm text-slate-700">
-                  AWS (EC2, S3, RDS), Laravel Forge, Docker &amp; Docker Compose, NGINX, Linux, Supervisor,
-                  CI/CD (Bitbucket Pipelines), Git, CloudWatch
-                </p>
-              </div>
-
-              <div class="rounded-2xl border border-slate-200 p-5">
-                <h3 class="font-semibold">Observability &amp; QA</h3>
-                <p class="mt-2 text-sm text-slate-700">
-                  logging/monitoring/alerting, structured logs, PHPUnit/Pest, Postman, performance/load testing
-                </p>
-              </div>
-
-              <div class="rounded-2xl border border-slate-200 p-5">
-                <h3 class="font-semibold">Integrations &amp; Messaging</h3>
-                <p class="mt-2 text-sm text-slate-700">
-                  webhooks &amp; third-party APIs, analytics instrumentation, payment processors, Twilio (SMS), Mailchimp,
-                  Pusher (real-time), Google Analytics/Optimize
-                </p>
-              </div>
-
-              <div class="rounded-2xl border border-slate-200 p-5 sm:col-span-2">
-                <h3 class="font-semibold">AI/LLMs/Automation</h3>
-                <p class="mt-2 text-sm text-slate-700">
-                  OpenAI, Anthropic, Gemini, Ollama, n8n, Zapier; LLM integrations (tools/agents),
-                  RAG (retrieval-augmented generation)
-                </p>
-              </div>
-
-              <div class="rounded-2xl border border-slate-200 p-5 sm:col-span-2">
-                <h3 class="font-semibold">Practices</h3>
-                <p class="mt-2 text-sm text-slate-700">
-                  Agile/Scrum, code reviews, CI-driven development, runbooks, incident response/postmortems,
-                  security (TLS, IP allowlists, secrets/API key management)
-                </p>
-              </div>
+          <div class="job">
+            <div class="job-head">
+              <div class="job-title">ForSaleByOwner (Chicago Tribune Company) — Web Developer</div>
+              <div class="job-dates">08/2009 – 05/2011</div>
             </div>
+            <p class="job-sub">Delivered integration-heavy platform improvements—photo workflows, appraisal APIs, and financial operations—focused on performance, correctness, and maintainability.</p>
+          </div>
+
+          <div class="job">
+            <div class="job-head">
+              <div class="job-title">Tukaiz Marketing — Web Developer</div>
+              <div class="job-dates">02/2008 – 08/2009</div>
+            </div>
+            <p class="job-sub">Implemented geo-targeted lead routing (Google Maps API) and high-volume email automation (3M+ sends/week), improving lead response and campaign efficiency.</p>
+          </div>
+
+          <div class="job">
+            <div class="job-head">
+              <div class="job-title">Zacks Investment Research — Web Developer</div>
+              <div class="job-dates">04/2007 – 02/2008</div>
+            </div>
+            <p class="job-sub">Built a custom CMS with granular permissions for high-traffic financial sites and improved engineering workflows (testing, deployment, and maintainability).</p>
+          </div>
+
+          <div class="job">
+            <div class="job-head">
+              <div class="job-title">Where2GetIt — Web Developer</div>
+              <div class="job-dates">12/2006 – 04/2007</div>
+            </div>
+            <p class="job-sub">Built reporting and analytics features and improved conversion workflows with a focus on performance and usability.</p>
+          </div>
+
+          <div class="job">
+            <div class="job-head">
+              <div class="job-title">Motorola — DevOps / Web Developer</div>
+              <div class="job-dates">03/1998 – 12/2006</div>
+            </div>
+            <p class="job-sub">Managed Unix/Windows production environments and web infrastructure (Apache/NGINX), automating deployments and operational workflows while improving uptime, performance, and incident response for internal systems.</p>
           </div>
         </div>
       </section>
 
-      <!-- Experience -->
-      <section class="mb-10">
-        <div class="card rounded-3xl border border-slate-200 bg-white shadow-soft">
-          <div class="p-7 sm:p-10">
-            <div class="flex items-end justify-between gap-4">
-              <h2 class="text-xl font-bold tracking-tight">Professional Experience</h2>
-              <p class="text-sm text-slate-500">Performance, reliability, and scale.</p>
-            </div>
-
-            <div class="mt-8 space-y-8">
-              <article>
-                <div class="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
-                  <h3 class="text-base font-semibold">
-                    Digital Initiatives LLC <span class="text-slate-400">—</span> Lead Web Developer
-                  </h3>
-                  <div class="text-sm text-slate-500">04/2016 – 09/2025</div>
-                </div>
-                <ul class="mt-3 space-y-2 text-sm text-slate-700 list-disc pl-5">
-                  <li>
-                    Owned and evolved PrudentPet’s high-traffic quoting platform: PostgreSQL data model, secure partner API integrations,
-                    Redis caching/queues, and multiple Vue-based UIs configurable via database; delivered customer and agent portals.
-                  </li>
-                  <li>
-                    Enabled growth experimentation and reporting: Google Optimize A/B tests backed by a custom analytics system; automated reporting and integrated BI dashboards.
-                  </li>
-                  <li>
-                    Built and hardened event-driven workflows across quoting, portals, and messaging (webhooks, retries, safe reprocessing); orchestrated scheduled jobs/queues to keep distributed systems in sync.
-                  </li>
-                  <li>
-                    Designed and shipped a real-time messaging app (Laravel, Vue, WebSockets/Pusher) to replace a deprecated third-party service; delivered in under one month and operated in production 2+ years.
-                  </li>
-                  <li>
-                    Led a 3-engineer, 48-hour sprint to build and deploy a real-time claims-mapping app during the Texas floods, routing tow trucks and syncing claim status live.
-                  </li>
-                  <li>
-                    Served as sole developer/architect for ClaimPix and MoveMatcher: database schema, APIs, UI, CI/CD, monitoring, access controls, and runbooks; transitioned ownership post-launch.
-                  </li>
-                  <li>
-                    Established deployment and observability standards across applications (Docker, AWS, CI/CD, alerts), documenting operational playbooks to support uptime and faster releases.
-                  </li>
-                  <li>
-                    Delivered a 4-month PostGIS routing/search proof-of-concept to match providers by real-time distance and improve conversion for location-based workflows.
-                  </li>
-                </ul>
-              </article>
-
-              <div class="border-t border-slate-200"></div>
-
-              <article>
-                <div class="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
-                  <h3 class="text-base font-semibold">
-                    Earlier Experience
-                  </h3>
-                </div>
-
-                <div class="mt-4 space-y-6 text-sm text-slate-700">
-                  <div>
-                    <div class="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
-                      <div class="font-semibold">Web Developer — PCTEL (formerly Nexgen Wireless)</div>
-                      <div class="text-slate-500">05/2011 – 11/2015</div>
-                    </div>
-                    <p class="mt-1">
-                      Led delivery of analytics dashboards for telecom clients; optimized PostgreSQL for large datasets to improve query performance and responsiveness.
-                    </p>
-                  </div>
-
-                  <div>
-                    <div class="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
-                      <div class="font-semibold">Web Developer — ForSaleByOwner (Chicago Tribune Company)</div>
-                      <div class="text-slate-500">08/2009 – 05/2011</div>
-                    </div>
-                    <p class="mt-1">
-                      Delivered integration-heavy platform improvements—photo workflows, appraisal APIs, and financial operations—focused on performance, correctness, and maintainability.
-                    </p>
-                  </div>
-
-                  <div>
-                    <div class="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
-                      <div class="font-semibold">Web Developer — Tukaiz Marketing</div>
-                      <div class="text-slate-500">02/2008 – 08/2009</div>
-                    </div>
-                    <p class="mt-1">
-                      Implemented geo-targeted lead routing (Google Maps API) and high-volume email automation (3M+ sends/week), improving lead response and campaign efficiency.
-                    </p>
-                  </div>
-
-                  <div>
-                    <div class="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
-                      <div class="font-semibold">Web Developer — Zacks Investment Research</div>
-                      <div class="text-slate-500">04/2007 – 02/2008</div>
-                    </div>
-                    <p class="mt-1">
-                      Built a custom CMS with granular permissions for high-traffic financial sites and improved engineering workflows (testing, deployment, and maintainability).
-                    </p>
-                  </div>
-
-                  <div>
-                    <div class="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
-                      <div class="font-semibold">Web Developer — Where2GetIt</div>
-                      <div class="text-slate-500">12/2006 – 04/2007</div>
-                    </div>
-                    <p class="mt-1">
-                      Built reporting and analytics features and improved conversion workflows with a focus on performance and usability.
-                    </p>
-                  </div>
-
-                  <div>
-                    <div class="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
-                      <div class="font-semibold">Dev Ops / Web Developer — Motorola</div>
-                      <div class="text-slate-500">03/1998 – 12/2006</div>
-                    </div>
-                    <p class="mt-1">
-                      Managed Unix/Windows production environments and web infrastructure (NGINX), automating deployments and operational workflows while improving uptime, performance, and incident response for internal systems.
-                    </p>
-                  </div>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
+      <section class="block card" id="education">
+        <h2>Education &amp; Certifications</h2>
+        <ul class="clean">
+          <li>M.S., Computer Information Systems — University of Phoenix (2000)</li>
+          <li>B.S., Electrical Engineering — DeVry Institute of Technology (1994)</li>
+          <li>Certifications: MCSA; CompTIA Security+, Network+, A+ (1994 - 2000)</li>
+        </ul>
       </section>
-
-      <!-- Education -->
-      <section class="mb-10">
-        <div class="card rounded-3xl border border-slate-200 bg-white shadow-soft">
-          <div class="p-7 sm:p-10">
-            <h2 class="text-xl font-bold tracking-tight">Education &amp; Certifications</h2>
-            <ul class="mt-4 space-y-2 text-sm text-slate-700">
-              <li><span class="font-semibold">M.S., Computer Information Systems</span> — University of Phoenix, 2000</li>
-              <li><span class="font-semibold">B.S., Electrical Engineering</span> — DeVry Institute of Technology, 1994</li>
-              <li><span class="font-semibold">Certifications:</span> MCSA; CompTIA Security+, Network+, A+</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <footer class="no-print flex items-center justify-between text-sm text-slate-500 pb-6">
-        <p>© <span id="y"></span> Jose Contreras</p>
-        <a class="hover:underline" href="https://github.com/stakbit/resume-site" target="_blank" rel="noopener">View on GitHub</a>
-      </footer>
     </main>
 
-    <script>
-      document.getElementById("y").textContent = new Date().getFullYear();
-    </script>
-  </body>
+    <footer>
+      © <span id="y"></span> Jose Contreras
+    </footer>
+  </div>
+
+  <script>
+    // Keep footer year current without rebuilds.
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
 </html>
